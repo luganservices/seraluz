@@ -854,6 +854,8 @@ blockquote { quotes: none; }
 .products__grid .fade-in:nth-child(7) { transition-delay: 0.08s; }
 .products__grid .fade-in:nth-child(8) { transition-delay: 0.16s; }
 .products__grid .fade-in:nth-child(9) { transition-delay: 0.24s; }
+.products__grid .fade-in:nth-child(10) { transition-delay: 0.06s; }
+.products__grid .fade-in:nth-child(11) { transition-delay: 0.14s; }
 
 .depoimentos__grid .fade-in:nth-child(2) { transition-delay: 0.1s; }
 .depoimentos__grid .fade-in:nth-child(3) { transition-delay: 0.2s; }
