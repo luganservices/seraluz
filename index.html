@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Seraluz — Velas Aromáticas Artesanais com cera 100% vegetal e aromas naturais. Encomendas personalizadas para presentes e eventos.">
+  <title>Seraluz — Velas Aromáticas Artesanais</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVEGAÇÃO
+  ============================================================ -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#inicio" class="nav__logo">
+        <span class="nav__logo-text">Seraluz</span>
+        <span class="nav__logo-sub">Velas Aromáticas</span>
+      </a>
+
+      <ul class="nav__list" id="nav-list" role="list">
+        <li><a href="#inicio"        class="nav__link">Início</a></li>
+        <li><a href="#produtos"      class="nav__link">Produtos</a></li>
+        <li><a href="#nossa-historia" class="nav__link">Nossa História</a></li>
+        <li><a href="#depoimentos"   class="nav__link">Depoimentos</a></li>
+        <li>
+          <a href="https://wa.me/5581982114120?text=Olá!%20Vim%20pelo%20site%20da%20Seraluz%20e%20gostaria%20de%20fazer%20um%20pedido%20%F0%9F%9B%92"
+             class="nav__link nav__link--cta" target="_blank" rel="noopener">
+            Falar no WhatsApp
+          </a>
+        </li>
+      </ul>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero" id="inicio">
+      <div class="hero__content container">
+        <p class="hero__eyebrow">Feitas com amor e cera vegetal</p>
+        <h1 class="hero__title">Velas que <em>transformam</em><br>seu ambiente</h1>
+        <p class="hero__subtitle">
+          Aromas naturais, cera 100% vegetal e muito carinho em cada vela
+          artesanal criada pela Seraluz.
+        </p>
+        <div class="hero__actions">
+          <a href="#produtos" class="btn btn--primary">Ver produtos</a>
+          <a href="https://wa.me/5581982114120?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20conhecer%20os%20produtos%20da%20Seraluz%20%F0%9F%95%AF%EF%B8%8F"
+             class="btn btn--secondary" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Foto de destaque -->
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__glow"></div>
+        <img src="assets/images/4.png" alt="" class="hero__foto" loading="eager">
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PRODUTOS
+         Substitua os atributos src pelas fotos do Instagram:
+         1. Acesse @seraluz.velasaromaticas no Instagram
+         2. Abra cada foto de produto
+         3. Salve a imagem e coloque na pasta assets/images/
+         4. Troque o src pelo caminho local, ex: src="assets/images/lavanda.jpg"
+    ============================================================ -->
+    <section class="section produtos" id="produtos">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Nosso catálogo</span>
+          <h2 class="section__title">Encontre sua vela perfeita</h2>
+          <p class="section__subtitle">
+            Cada vela é feita artesanalmente com cera vegetal e aromas naturais
+            selecionados com carinho.
+          </p>
+        </div>
+
+        <div class="products__grid">
+
+          <!-- PRODUTO 1 — Latina -->
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="assets/images/4.png"
+                   alt="Vela Latina — Seraluz" class="product-card__img" loading="lazy">
+              <span class="product-card__badge">Mais pedida</span>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Latina</h3>
+              <p class="product-card__desc">Formato clássico com acabamento elegante. Queima por horas perfumando suavemente qualquer ambiente.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$&nbsp;37,50</span>
+                <a href="https://wa.me/5581982114120?text=Olá!%20Quero%20comprar%20a%20Vela%20Latina%20%F0%9F%95%AF%EF%B8%8F"
+                   class="btn btn--whatsapp" target="_blank" rel="noopener">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUTO 2 — Catândrca M -->
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="assets/images/2.png"
+                   alt="Vela Catândrca M — Seraluz" class="product-card__img" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Catândrca M</h3>
+              <p class="product-card__desc">Tamanho médio com tampa dourada. Duração estendida, ideal para ambientes maiores ou noites longas.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$&nbsp;41,00</span>
+                <a href="https://wa.me/5581982114120?text=Olá!%20Quero%20comprar%20a%20Catândrca%20M%20%F0%9F%95%AF%EF%B8%8F"
+                   class="btn btn--whatsapp" target="_blank" rel="noopener">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUTO 3 — Catândrca P -->
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="assets/images/1.png"
+                   alt="Vela Catândrca P — Seraluz" class="product-card__img" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Catândrca P</h3>
+              <p class="product-card__desc">Versão compacta com tampa de madeira natural. Perfeita para espaços menores ou para presentear.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$&nbsp;38,00</span>
+                <a href="https://wa.me/5581982114120?text=Olá!%20Quero%20comprar%20a%20Catândrca%20P%20%F0%9F%95%AF%EF%B8%8F"
+                   class="btn btn--whatsapp" target="_blank" rel="noopener">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUTO 4 — Margarida -->
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="assets/images/6.png"
+                   alt="Vela Margarida — Seraluz" class="product-card__img" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Margarida</h3>
+              <p class="product-card__desc">Formato delicado com acabamento refinado. Enfeita e perfuma seu ambiente ao mesmo tempo.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$&nbsp;38,00</span>
+                <a href="https://wa.me/5581982114120?text=Olá!%20Quero%20comprar%20a%20Vela%20Margarida%20%F0%9F%95%AF%EF%B8%8F"
+                   class="btn btn--whatsapp" target="_blank" rel="noopener">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUTO 5 — Pato -->
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="assets/images/2.png"
+                   alt="Vela Pato — Seraluz" class="product-card__img" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Pato</h3>
+              <p class="product-card__desc">Formato divertido e charmoso — combina arte, aroma e presença. Ótima opção de presente criativo.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$&nbsp;32,00</span>
+                <a href="https://wa.me/5581982114120?text=Olá!%20Quero%20comprar%20a%20Vela%20Pato%20%F0%9F%95%AF%EF%B8%8F"
+                   class="btn btn--whatsapp" target="_blank" rel="noopener">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUTO 6 — Rosa -->
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="assets/images/5.png"
+                   alt="Vela Rosa — Seraluz" class="product-card__img" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Rosa</h3>
+              <p class="product-card__desc">Delicada, linda e perfumada. Tamanho pequeno, impacto enorme — perfeita para presentear.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$&nbsp;11,50</span>
+                <a href="https://wa.me/5581982114120?text=Olá!%20Quero%20comprar%20a%20Vela%20Rosa%20%F0%9F%95%AF%EF%B8%8F"
+                   class="btn btn--whatsapp" target="_blank" rel="noopener">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUTO 7 — Latinha -->
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="assets/images/1.png"
+                   alt="Vela Latinha — Seraluz" class="product-card__img" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Latinha</h3>
+              <p class="product-card__desc">Prática e compacta, cabe em qualquer canto e leva o aroma Seraluz para onde você for.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$&nbsp;12,50</span>
+                <a href="https://wa.me/5581982114120?text=Olá!%20Quero%20comprar%20a%20Latinha%20%F0%9F%95%AF%EF%B8%8F"
+                   class="btn btn--whatsapp" target="_blank" rel="noopener">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUTO 8 — Kit Presente (featured) -->
+          <article class="product-card product-card--featured fade-in">
+            <div class="product-card__img-wrap">
+              <img src="assets/images/5.png"
+                   alt="Kit Presente 3 Velas — Seraluz" class="product-card__img" loading="lazy">
+              <span class="product-card__badge product-card__badge--gold">Presente perfeito</span>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Kit Presente — 3 Velas</h3>
+              <p class="product-card__desc">Monte seu kit com 3 modelos à sua escolha. Embalagem especial inclusa, pronta para presentear.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">Consulte no WPP</span>
+                <a href="https://wa.me/5581982114120?text=Olá!%20Quero%20montar%20um%20Kit%20Presente%20com%203%20Velas%20%F0%9F%8E%81"
+                   class="btn btn--whatsapp" target="_blank" rel="noopener">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUTO 9 — Personalizada -->
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="assets/images/4.png"
+                   alt="Vela Personalizada por Encomenda — Seraluz" class="product-card__img" loading="lazy">
+              <span class="product-card__badge">Personalizada</span>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Vela Personalizada</h3>
+              <p class="product-card__desc">Criamos a vela perfeita para o seu evento ou presente especial. Escolha o formato, o aroma e a embalagem.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">A partir de R$&nbsp;12,50</span>
+                <a href="https://wa.me/5581982114120?text=Olá!%20Quero%20encomendar%20uma%20Vela%20Personalizada%20%E2%9C%A8"
+                   class="btn btn--whatsapp" target="_blank" rel="noopener">Encomendar</a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /.products__grid -->
+
+        <div class="products__more">
+          <p>Não encontrou o que procura?</p>
+          <a href="https://wa.me/5581982114120?text=Olá!%20Gostaria%20de%20conhecer%20todos%20os%20produtos%20da%20Seraluz%20%F0%9F%98%8A"
+             class="btn btn--outline" target="_blank" rel="noopener">
+            Ver todos os produtos no WhatsApp
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         NOSSA HISTÓRIA
+    ============================================================ -->
+    <section class="section nossa-historia" id="nossa-historia">
+      <div class="container">
+        <div class="nossa-historia__grid">
+
+          <div class="nossa-historia__texto fade-in">
+            <span class="section__eyebrow">Quem somos</span>
+            <h2 class="section__title section__title--left">Nossa história</h2>
+            <p>
+              A Seraluz nasceu do amor pelos aromas e pela arte de iluminar ambientes
+              com propósito. Cada vela que sai das nossas mãos carrega um cuidado
+              especial — desde a escolha das matérias-primas até o acabamento do rótulo.
+            </p>
+            <p>
+              Acreditamos que uma vela de qualidade faz diferença no seu dia: ela
+              transforma o ambiente, cria momentos, acalma e inspira. Por isso,
+              trabalhamos apenas com o melhor.
+            </p>
+            <a href="https://www.instagram.com/seraluz.velasaromaticas/"
+               class="btn btn--outline" target="_blank" rel="noopener">
+              Acompanhe no Instagram
+            </a>
+          </div>
+
+          <div class="nossa-historia__diferenciais">
+
+            <div class="diferencial fade-in">
+              <div class="diferencial__icone" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/>
+                  <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="diferencial__titulo">Cera de Coco 100% Vegetal</h3>
+                <p class="diferencial__desc">
+                  Livre de parafina. A cera de coco queima de forma mais limpa,
+                  dura mais e é segura para sua saúde e o meio ambiente.
+                </p>
+              </div>
+            </div>
+
+            <div class="diferencial fade-in">
+              <div class="diferencial__icone" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="diferencial__titulo">Essências Lipossolúveis</h3>
+                <p class="diferencial__desc">
+                  Usamos essências lipossolúveis de alta fixação, que se integram
+                  perfeitamente à cera para um aroma intenso e duradouro.
+                </p>
+              </div>
+            </div>
+
+            <div class="diferencial fade-in">
+              <div class="diferencial__icone" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="2" x2="12" y2="22"/>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="diferencial__titulo">Pavio de Algodão</h3>
+                <p class="diferencial__desc">
+                  Nosso pavio de algodão garante uma chama estável, queima limpa
+                  e sem fuligem — preservando o aroma e o ambiente da sua casa.
+                </p>
+              </div>
+            </div>
+
+            <div class="diferencial fade-in">
+              <div class="diferencial__icone" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 12 20 22 4 22 4 12"/>
+                  <rect x="2" y="7" width="20" height="5"/>
+                  <line x1="12" y1="22" x2="12" y2="7"/>
+                  <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/>
+                  <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="diferencial__titulo">Encomendas Especiais</h3>
+                <p class="diferencial__desc">
+                  Criamos velas personalizadas para presentes, casamentos, chás e
+                  eventos corporativos. Fale conosco e criamos algo único para você.
+                </p>
+              </div>
+            </div>
+
+          </div><!-- /.nossa-historia__diferenciais -->
+        </div>
+
+        <!-- Infográfico "Como são feitas as velas Seraluz" -->
+        <div class="nossa-historia__infografico fade-in">
+          <img src="assets/images/3.png"
+               alt="Como são feitas as velas Seraluz: cera de coco 100% vegetal, livre de parafina, essências lipossolúveis e pavio de algodão"
+               loading="lazy">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         DEPOIMENTOS
+         Substitua pelos depoimentos reais de clientes da loja.
+    ============================================================ -->
+    <section class="section depoimentos" id="depoimentos">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Quem já amou</span>
+          <h2 class="section__title">O que dizem nossas clientes</h2>
+        </div>
+
+        <div class="depoimentos__grid">
+
+          <div class="depoimento fade-in">
+            <div class="depoimento__estrelas" aria-label="5 estrelas">★★★★★</div>
+            <blockquote class="depoimento__texto">
+              "As velas da Seraluz transformaram completamente o clima da minha casa.
+              O aroma dura muito mais do que outras marcas, e a qualidade é incrível.
+              Já indiquei para todas as minhas amigas!"
+            </blockquote>
+            <div class="depoimento__autor">
+              <div class="depoimento__avatar" aria-hidden="true">M</div>
+              <div>
+                <strong>Maria S.</strong>
+                <span>Cliente desde 2023</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="depoimento fade-in">
+            <div class="depoimento__estrelas" aria-label="5 estrelas">★★★★★</div>
+            <blockquote class="depoimento__texto">
+              "Comprei um kit de presente para minha mãe e ela ficou encantada! A
+              embalagem é linda, o aroma é delicado e a vela queima uniformemente.
+              Voltarei a comprar com certeza."
+            </blockquote>
+            <div class="depoimento__autor">
+              <div class="depoimento__avatar" aria-hidden="true">A</div>
+              <div>
+                <strong>Ana Paula</strong>
+                <span>Cliente recorrente</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="depoimento fade-in">
+            <div class="depoimento__estrelas" aria-label="5 estrelas">★★★★★</div>
+            <blockquote class="depoimento__texto">
+              "Pedi velas personalizadas para o meu casamento e ficaram perfeitas!
+              A Seraluz entendeu exatamente o que eu queria, entregou no prazo e
+              todas as convidadas pediram o contato. Recomendo demais!"
+            </blockquote>
+            <div class="depoimento__autor">
+              <div class="depoimento__avatar" aria-hidden="true">C</div>
+              <div>
+                <strong>Carla M.</strong>
+                <span>Encomenda para casamento</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CTA FINAL
+    ============================================================ -->
+    <section class="section cta-final" id="contato">
+      <div class="container">
+        <div class="cta-final__conteudo">
+          <span class="section__eyebrow">Vamos conversar?</span>
+          <h2 class="cta-final__titulo">
+            Encontre sua vela perfeita<br>ou crie uma exclusiva
+          </h2>
+          <p class="cta-final__subtitulo">
+            Estamos aqui para ajudar você a escolher o aroma certo ou criar
+            uma experiência personalizada. Fale com a gente!
+          </p>
+          <div class="cta-final__acoes">
+            <a href="https://wa.me/5581982114120?text=Olá!%20Vim%20pelo%20site%20da%20Seraluz%20e%20gostaria%20de%20fazer%20um%20pedido%20%F0%9F%9B%92"
+               class="btn btn--wpp-grande" target="_blank" rel="noopener">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              Falar no WhatsApp
+            </a>
+            <a href="https://www.instagram.com/seraluz.velasaromaticas/"
+               class="btn btn--insta-grande" target="_blank" rel="noopener">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              Seguir no Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       RODAPÉ
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Marca -->
+        <div class="footer__marca">
+          <div class="footer__logo">Seraluz</div>
+          <p class="footer__tagline">Velas artesanais feitas com cera vegetal e aromas naturais selecionados com carinho.</p>
+          <div class="footer__redes">
+            <a href="https://www.instagram.com/seraluz.velasaromaticas/"
+               target="_blank" rel="noopener" aria-label="Instagram da Seraluz">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/5581982114120"
+               target="_blank" rel="noopener" aria-label="WhatsApp da Seraluz">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navegação -->
+        <div class="footer__nav">
+          <h4 class="footer__heading">Navegação</h4>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#nossa-historia">Nossa História</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+          </ul>
+        </div>
+
+        <!-- Contato -->
+        <div class="footer__contato">
+          <h4 class="footer__heading">Contato</h4>
+          <ul>
+            <li>
+              <a href="https://wa.me/5581982114120" target="_blank" rel="noopener">
+                (81) 98211-4120
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/seraluz.velasaromaticas/" target="_blank" rel="noopener">
+                @seraluz.velasaromaticas
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Política de Troca -->
+        <div class="footer__politica">
+          <h4 class="footer__heading footer__politica-toggle"
+              id="politica-toggle"
+              role="button"
+              tabindex="0"
+              aria-expanded="false"
+              aria-controls="politica-content">
+            Política de Troca e Devolução
+            <svg class="footer__seta" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </h4>
+          <div class="footer__politica-content" id="politica-content">
+            <p>
+              <strong>Prazo:</strong> Aceitamos trocas e devoluções em até 7 dias corridos
+              após o recebimento do produto, conforme o Código de Defesa do Consumidor (Art. 49).
+            </p>
+            <p>
+              <strong>Condições:</strong> O produto deve estar em perfeitas condições, sem uso,
+              com embalagem original e acompanhado da nota de compra.
+            </p>
+            <p>
+              <strong>Defeitos:</strong> Em caso de defeito de fabricação, realizamos a troca
+              sem custo adicional. Entre em contato pelo WhatsApp para solicitar.
+            </p>
+            <p>
+              <strong>Como solicitar:</strong> Envie uma mensagem no WhatsApp
+              <a href="https://wa.me/5581982114120">(81) 98211-4120</a>
+              informando o número do pedido e o motivo da troca ou devolução.
+            </p>
+            <p>
+              <strong>Reembolso:</strong> Após análise e aprovação, o reembolso será
+              realizado em até 10 dias úteis.
+            </p>
+          </div>
+        </div>
+
+      </div><!-- /.footer__grid -->
+
+      <div class="footer__bottom">
+        <p>© 2024 Seraluz Velas Aromáticas — Todos os direitos reservados.</p>
+        <p>Feito com amor, cera vegetal e muito aroma.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
