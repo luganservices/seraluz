@@ -82,3 +82,73 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     alvo.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
+
+// ── Montador de vela (modelo + quantidade + essência → WhatsApp) ──
+(function () {
+  const grid     = document.getElementById('essencias-grid');
+  const modeloEl = document.getElementById('montador-modelo');
+  const qtdEl    = document.getElementById('montador-qtd');
+  const maisEl   = document.getElementById('qtd-mais');
+  const menosEl  = document.getElementById('qtd-menos');
+  const selecao  = document.getElementById('montador-selecao');
+  const cta      = document.getElementById('montador-cta');
+  if (!grid || !modeloEl || !selecao || !cta) return;
+
+  const WPP = 'https://wa.me/5581982114120?text=';
+  let essencia = null;
+
+  function qtd() {
+    let n = parseInt(qtdEl.value, 10);
+    if (isNaN(n) || n < 1) n = 1;
+    if (n > 99) n = 99;
+    return n;
+  }
+
+  function atualizar() {
+    const modelo = modeloEl.value;
+    const n = qtd();
+    const plural = n > 1 ? 'velas' : 'vela';
+    let resumo, msg;
+
+    if (modelo && essencia) {
+      resumo = `${n}× Vela ${modelo} · Essência ${essencia}`;
+      msg = `Olá! Quero ${n} ${plural} ${modelo} na essência ${essencia} 🕯️`;
+    } else if (modelo) {
+      resumo = `${n}× Vela ${modelo}`;
+      msg = `Olá! Quero ${n} ${plural} ${modelo} 🕯️`;
+    } else if (essencia) {
+      resumo = `${n}× Vela · Essência ${essencia}`;
+      msg = `Olá! Quero ${n} ${plural} na essência ${essencia} 🕯️`;
+    } else {
+      resumo = 'Escolha um modelo e/ou uma essência para montar seu pedido.';
+      msg = 'Olá! Gostaria de montar uma vela personalizada 🕯️';
+    }
+
+    selecao.textContent = resumo;
+    cta.href = WPP + encodeURIComponent(msg);
+    cta.classList.toggle('is-disabled', !modelo && !essencia);
+  }
+
+  grid.addEventListener('click', e => {
+    const card = e.target.closest('.essencia-card');
+    if (!card) return;
+
+    const jaAtivo = card.getAttribute('aria-pressed') === 'true';
+    grid.querySelectorAll('.essencia-card').forEach(c => c.setAttribute('aria-pressed', 'false'));
+
+    if (jaAtivo) {
+      essencia = null;
+    } else {
+      card.setAttribute('aria-pressed', 'true');
+      essencia = card.dataset.essencia;
+    }
+    atualizar();
+  });
+
+  if (maisEl)  maisEl.addEventListener('click', () => { qtdEl.value = qtd() + 1; atualizar(); });
+  if (menosEl) menosEl.addEventListener('click', () => { qtdEl.value = Math.max(1, qtd() - 1); atualizar(); });
+  if (qtdEl)   qtdEl.addEventListener('input', atualizar);
+
+  modeloEl.addEventListener('change', atualizar);
+  atualizar();
+})();
