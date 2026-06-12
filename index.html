@@ -74,6 +74,11 @@
       <div class="hero__visual" aria-hidden="true">
         <div class="hero__glow"></div>
         <img src="assets/images/4.png" alt="" class="hero__foto" loading="eager">
+        <!-- Cópia da mesma foto, revelada só na chama por uma máscara suave,
+             animada para fazer a chama REAL tremular -->
+        <div class="hero__flame-clip">
+          <img src="assets/images/4.png" alt="" class="hero__flame-img" aria-hidden="true">
+        </div>
       </div>
     </section>
 
@@ -321,17 +326,17 @@
           </p>
         </div>
 
-        <!-- Amostras decorativas de cor -->
-        <div class="cores__amostras" aria-hidden="true">
-          <span style="--c:#EBE3D5"></span>
-          <span style="--c:#D4B896"></span>
-          <span style="--c:#C4A35A"></span>
-          <span style="--c:#9AAB8A"></span>
-          <span style="--c:#7A8C6A"></span>
-          <span style="--c:#D98AAE"></span>
-          <span style="--c:#C9A0DC"></span>
-          <span style="--c:#E0A87A"></span>
-        </div>
+        <!-- Amostras de cor disponíveis -->
+        <ul class="cores__amostras">
+          <li class="cores__item"><span class="cores__bolinha" style="--c:#3B6FB5"></span><span class="cores__nome">Azul</span></li>
+          <li class="cores__item"><span class="cores__bolinha" style="--c:#F2C94C"></span><span class="cores__nome">Amarelo</span></li>
+          <li class="cores__item"><span class="cores__bolinha" style="--c:#6FA86A"></span><span class="cores__nome">Verde</span></li>
+          <li class="cores__item"><span class="cores__bolinha" style="--c:#C0413B"></span><span class="cores__nome">Vermelho</span></li>
+          <li class="cores__item"><span class="cores__bolinha" style="--c:#8A5A3B"></span><span class="cores__nome">Marrom</span></li>
+          <li class="cores__item"><span class="cores__bolinha" style="--c:#E08A3C"></span><span class="cores__nome">Laranja</span></li>
+          <li class="cores__item"><span class="cores__bolinha" style="--c:#B79BD6"></span><span class="cores__nome">Lilás</span></li>
+          <li class="cores__item"><span class="cores__bolinha" style="--c:#D98AAE"></span><span class="cores__nome">Rosa</span></li>
+        </ul>
 
         <div class="cores__aviso">
           <p class="cores__aviso-item">
@@ -434,7 +439,7 @@
 
           <div class="essencias__grid" id="essencias-grid" role="listbox" aria-label="Essências disponíveis">
             <button type="button" class="essencia-card essencia--floral" data-essencia="Lavanda" aria-pressed="false">
-              <span class="essencia__visual"><span class="essencia__icone"><svg><use href="#ic-flor"/></svg></span></span>
+              <span class="essencia__visual"><img class="essencia__foto" src="assets/aromas/lavanda.png" alt="Essência de Lavanda" loading="lazy"></span>
               <span class="essencia__info">
                 <span class="essencia__nome">Lavanda</span>
                 <span class="essencia__familia">Floral</span>
@@ -442,7 +447,7 @@
               </span>
             </button>
             <button type="button" class="essencia-card essencia--floral" data-essencia="Flor de Cerejeira" aria-pressed="false">
-              <span class="essencia__visual"><span class="essencia__icone"><svg><use href="#ic-flor"/></svg></span></span>
+              <span class="essencia__visual"><img class="essencia__foto" src="assets/aromas/flordecerejeira.png" alt="Essência de Flor de Cerejeira" loading="lazy"></span>
               <span class="essencia__info">
                 <span class="essencia__nome">Flor de Cerejeira</span>
                 <span class="essencia__familia">Floral</span>
@@ -450,7 +455,7 @@
               </span>
             </button>
             <button type="button" class="essencia-card essencia--citrico" data-essencia="Capim Limão" aria-pressed="false">
-              <span class="essencia__visual"><span class="essencia__icone essencia__icone--linha"><svg><use href="#ic-folha"/></svg></span></span>
+              <span class="essencia__visual"><img class="essencia__foto" src="assets/aromas/capimlimao.png" alt="Essência de Capim Limão" loading="lazy"></span>
               <span class="essencia__info">
                 <span class="essencia__nome">Capim Limão</span>
                 <span class="essencia__familia">Cítrico</span>
@@ -458,7 +463,7 @@
               </span>
             </button>
             <button type="button" class="essencia-card essencia--frutado" data-essencia="Caju" aria-pressed="false">
-              <span class="essencia__visual"><span class="essencia__icone"><svg><use href="#ic-fruta"/></svg></span></span>
+              <span class="essencia__visual"><img class="essencia__foto" src="assets/aromas/caju.png" alt="Essência de Caju" loading="lazy"></span>
               <span class="essencia__info">
                 <span class="essencia__nome">Caju</span>
                 <span class="essencia__familia">Frutado</span>
@@ -466,7 +471,7 @@
               </span>
             </button>
             <button type="button" class="essencia-card essencia--frutado" data-essencia="Maracujá" aria-pressed="false">
-              <span class="essencia__visual"><span class="essencia__icone"><svg><use href="#ic-fruta"/></svg></span></span>
+              <span class="essencia__visual"><img class="essencia__foto" src="assets/aromas/maracuja.png" alt="Essência de Maracujá" loading="lazy"></span>
               <span class="essencia__info">
                 <span class="essencia__nome">Maracujá</span>
                 <span class="essencia__familia">Frutado</span>
@@ -474,7 +479,7 @@
               </span>
             </button>
             <button type="button" class="essencia-card essencia--citrico" data-essencia="Bergamota" aria-pressed="false">
-              <span class="essencia__visual"><span class="essencia__icone"><svg><use href="#ic-gota"/></svg></span></span>
+              <span class="essencia__visual"><img class="essencia__foto" src="assets/aromas/bergamota.png" alt="Essência de Bergamota" loading="lazy"></span>
               <span class="essencia__info">
                 <span class="essencia__nome">Bergamota</span>
                 <span class="essencia__familia">Cítrico</span>
@@ -482,7 +487,7 @@
               </span>
             </button>
             <button type="button" class="essencia-card essencia--amadeirado" data-essencia="Trussardi" aria-pressed="false">
-              <span class="essencia__visual"><span class="essencia__icone essencia__icone--linha"><svg><use href="#ic-aneis"/></svg></span></span>
+              <span class="essencia__visual"><img class="essencia__foto" src="assets/aromas/trussardi.png" alt="Essência Trussardi" loading="lazy"></span>
               <span class="essencia__info">
                 <span class="essencia__nome">Trussardi</span>
                 <span class="essencia__familia">Amadeirado</span>
@@ -490,7 +495,7 @@
               </span>
             </button>
             <button type="button" class="essencia-card essencia--doce" data-essencia="Cereja e Avelã" aria-pressed="false">
-              <span class="essencia__visual"><span class="essencia__icone"><svg><use href="#ic-gota"/></svg></span></span>
+              <span class="essencia__visual"><img class="essencia__foto" src="assets/aromas/cerejaeavela.png" alt="Essência de Cereja e Avelã" loading="lazy"></span>
               <span class="essencia__info">
                 <span class="essencia__nome">Cereja e Avelã</span>
                 <span class="essencia__familia">Doce</span>
@@ -498,7 +503,7 @@
               </span>
             </button>
             <button type="button" class="essencia-card essencia--especiaria" data-essencia="Cravo e Canela" aria-pressed="false">
-              <span class="essencia__visual"><span class="essencia__icone"><svg><use href="#ic-estrela"/></svg></span></span>
+              <span class="essencia__visual"><img class="essencia__foto" src="assets/aromas/cravoecanela.png" alt="Essência de Cravo e Canela" loading="lazy"></span>
               <span class="essencia__info">
                 <span class="essencia__nome">Cravo e Canela</span>
                 <span class="essencia__familia">Especiaria</span>
@@ -506,7 +511,7 @@
               </span>
             </button>
             <button type="button" class="essencia-card essencia--doce" data-essencia="Baunilha" aria-pressed="false">
-              <span class="essencia__visual"><span class="essencia__icone"><svg><use href="#ic-gota"/></svg></span></span>
+              <span class="essencia__visual"><img class="essencia__foto" src="assets/aromas/baunilha.png" alt="Essência de Baunilha" loading="lazy"></span>
               <span class="essencia__info">
                 <span class="essencia__nome">Baunilha</span>
                 <span class="essencia__familia">Doce</span>
@@ -514,7 +519,7 @@
               </span>
             </button>
             <button type="button" class="essencia-card essencia--fresco" data-essencia="Chá Branco" aria-pressed="false">
-              <span class="essencia__visual"><span class="essencia__icone essencia__icone--linha"><svg><use href="#ic-folha"/></svg></span></span>
+              <span class="essencia__visual"><img class="essencia__foto" src="assets/aromas/chabranco.png" alt="Essência de Chá Branco" loading="lazy"></span>
               <span class="essencia__info">
                 <span class="essencia__nome">Chá Branco</span>
                 <span class="essencia__familia">Fresco</span>
@@ -522,7 +527,7 @@
               </span>
             </button>
             <button type="button" class="essencia-card essencia--frutado" data-essencia="Figo" aria-pressed="false">
-              <span class="essencia__visual"><span class="essencia__icone"><svg><use href="#ic-fruta"/></svg></span></span>
+              <span class="essencia__visual"><img class="essencia__foto" src="assets/aromas/figo.png" alt="Essência de Figo" loading="lazy"></span>
               <span class="essencia__info">
                 <span class="essencia__nome">Figo</span>
                 <span class="essencia__familia">Frutado</span>
@@ -530,7 +535,7 @@
               </span>
             </button>
             <button type="button" class="essencia-card essencia--floral" data-essencia="Afrodite" aria-pressed="false">
-              <span class="essencia__visual"><span class="essencia__icone"><svg><use href="#ic-flor"/></svg></span></span>
+              <span class="essencia__visual"><img class="essencia__foto" src="assets/aromas/afrodite.png" alt="Essência Afrodite" loading="lazy"></span>
               <span class="essencia__info">
                 <span class="essencia__nome">Afrodite</span>
                 <span class="essencia__familia">Floral</span>
@@ -538,7 +543,7 @@
               </span>
             </button>
             <button type="button" class="essencia-card essencia--floral" data-essencia="Love Spell" aria-pressed="false">
-              <span class="essencia__visual"><span class="essencia__icone"><svg><use href="#ic-flor"/></svg></span></span>
+              <span class="essencia__visual"><img class="essencia__foto" src="assets/aromas/lovespell.png" alt="Essência Love Spell" loading="lazy"></span>
               <span class="essencia__info">
                 <span class="essencia__nome">Love Spell</span>
                 <span class="essencia__familia">Floral</span>
